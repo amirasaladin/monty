@@ -1,5 +1,5 @@
 #include "monty.h"
-/* run_opcode -
+/* run_opcode - checks and runs opcode
  * 
  */
 

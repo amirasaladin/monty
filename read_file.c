@@ -21,7 +21,7 @@ void read_file(char *filename)
 		exit(EXIT_FAILURE);
 	}
 	while((read = getline(&line, &len, fp)) != -1)
-	{
+	{	
 		line_count += 1;
 		tokens = tokenize_line(line, &num_tokens);
 		run_opcode(tokens, num_tokens, line_count);

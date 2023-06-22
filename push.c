@@ -13,7 +13,7 @@ void push(stack_t **stack, char **tokens, int num_tokens, unsigned int line_numb
 
 	if (!new_node)
 		malloc_fail();
-
+	/* or token[1] is not a number */
 	if (num_tokens < 2)
 	{
 		fprintf(stderr, "L%d: usage: push integer\n", line_number);
